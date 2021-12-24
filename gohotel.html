@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    nav{
+        height: 50px;
+        width: 100%;
+        background: yellow;
+        position: fixed;
+        top: 0px;
+        text-align: center;
+    }
+    .search{
+        text-align: center;
+        border-radius: 10px;
+        height: 650px;
+        width: 1500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .he{
+        height: 300px;
+        width: 100%;
+        color: red;
+        
+        }
+    h1{
+        margin-top: 50px;
+        width: 100%;
+        height: 50px;
+        background: white;
+        color: black;
+        font-family: 'Pushster', cursive;
+        font-size: 25px;
+        font-weight: 100;
+        }
+    .hebox{
+        height: 200px;
+        width: 100%;
+    }
+    .hebox ul{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 0px 35px;
+    }
+    .hebox ul li{
+        list-style: none;
+        height: 100px;
+        width: 100px;
+        margin: 5px 5px;
+    }
+    .hebox ul li .boc{
+        height: 100%;
+        width: 100%;
+    }
+    .hebox ul li .boc img{
+        height: 100%;
+        width: 100%;
+    }
+    form{
+        /*  */
+        /* margin-right: 113px; */
+        /* margin-left: 899px; */
+        /* background: rgba(0, 0, 0, 0.5); */
+        text-align: start;
+        height: 375px;
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
+    form #seah{
+        height: 50px;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* form #seah .btn{
+        height: 100%;
+        width: auto;
+    } */
+    form #seah .hots{
+        width: 80%;
+        position: relative;
+    }
+    form #seah .hots .hoy{
+        position: absolute;
+        height: 100px;
+        width: 200px;
+        background: red ;
+    }
+    form #seah .hots .mysel{
+        display: none;
+    }
+    form #seah .hots .hoy ul{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    form #seah .hots .hoy ul li{
+        list-style: none;
+        border: 2px solid black;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    form #seah .hots .hoy ul li:hover{
+        padding: 10px;
+        background:  rgb(0, 0, 0,0.5);
+    }
+    form #seah .hots .hoy ul li img{
+        height: 80%;
+        width: 100%;
+        -webkit-transition: -webkit-transform 1s;
+    }
+    form #seah .hots .hoy ul li img:hover{
+        -webkit-transform: rotate(360deg) translateZ(0);
+    }
+    form #seah .hots .hoy ul li span{
+        height: 20%;
+        width: 100%;
+        color: white;
+        font-size: 20px;
+    }
+    form #seah .hots input{
+        padding-left: 10px;
+        height: 50px;
+        width: 100%;
+        /* border-radius: 10px; */
+    }
+    form #seah .btn{
+        height: 50px;
+        width: 20%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+
+    form #seah span{
+        text-align: center;
+        /* border-radius: 10px; */
+        height: 100%;
+        width: 75px;
+        color: black;
+        border: 2px solid black;
+    }
+    form .type{
+        margin-top: 70px;
+        height: 50px;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    form .type input{
+        padding-left: 10px;
+        height: 35px;
+        width: 40%;
+        border: none;
+        background: blue;
+
+        color: white;
+    }
+    form .type select{
+        height: 35px;
+        width: 50%;
+        background: blue;
+        color: white;
+    }
+    #sumit{
+        border-radius: 10px;
+        margin-top: 20px;
+        height: 35px;
+        width: 137px;
+        font-size: 25px;
+        color: white;
+        border: 2px solid white;
+        background: blue;
+    }
+</style>
+<body>
+    <nav>
+        Navigation
+    </nav>
+    <div class="search">
+        <div class="he">
+            <h1>Welcome to the go india service book your favouir hotel at the <span>best price</span> </h1>
+            <div class="hebox">
+                <ul>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li> <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li> <li>
+                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+         
+    <form action="./f.php" method="POST">
+        <div id="seah">
+            <div class="hots">
+              <input type="text" placeholder="Enter city or hotel name" name="search" id="selhot">  
+              <div id="sel"  class="hoy">
+                  <ul>
+                      <li><img src="./download (2).jpg" alt=""> <span>delhi</span></li>
+                      <li><img src="./download (2).jpg" alt=""> <span>delhi</span></li>
+                      <li><img src="./download (2).jpg" alt=""> <span>delhi</span></li>
+                  </ul>
+              </div>
+            </div>
+            <div class="btn">
+                <span name="cheakin">Cheakin</span> <span name="cheakin">Cheakout</span>
+            </div> 
+        </div>
+        <div class="type">
+            <select name="guist" id="" >
+                <option value="man">Solo Traveller</option> 
+                <option value="female">Couple / Pair</option> 
+                <option value="other">Family Travelers</option> 
+                <option value="female">grup travelers</option> 
+                <option value="other">business Travelers</option> 
+            </select>
+            <input type="number" placeholder="Room number"> 
+        </div>
+        <input type="submit" id="sumit" value="seach Hotel" name="submit">
+    </form> 
+    </div>
+  <script>
+        let seleHot = document.getElementById("selhot");
+        let sel = document.getElementById("sel");
+        
+      seleHot.addEventListener("click",()=>{
+            sel.classList.toggle("mysel");
+      })
+      let lii = document.getElementsByTagName("li");
+      lii.addEventListener("click",()=>{
+        console.log("add");
+      })
+  </script>
+</body>
+</html>
