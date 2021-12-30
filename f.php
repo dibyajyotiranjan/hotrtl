@@ -13,19 +13,20 @@ if($con){
     //die("no connect" . mysqli_connect_error());
 }
 if(isset($_POST['submit'])){
-    $email = $_POST["search"];
-    $search = "select * from hotel where place='$email' ";
-    // $insertquery = " insert into hotel(place) values('$email','$refer','$jobpost')";
-    $ref = mysqli_query($con,$search);
-    if($ref){
-            while ($a = mysqli_fetch_array($ref)) {
-                echo $a['hotelname'];
-            }
-        
-    }else{
-        
-        echo("data not found");
-        
-      }
+$email = $_POST["username"];
+$refer = $_POST["email"];
+$jobpost = $_POST["password"];
+// $refer = $_POST["email"];
+// $jobpost = $_POST["jobpost"];
+$insertquery = " insert into hotel(place,hotelname,price ) values('$email','$refer','$jobpost')";
+$ref = mysqli_query($con,$insertquery);
+if($ref){
+        echo("data insert</br> name $email, </br>email $refer,</br> Password $jobpost");
+    
+}else{
+    
+    echo("data inot valid");
+    
+  }
     }
 ?>

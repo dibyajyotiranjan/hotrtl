@@ -23,11 +23,33 @@
         top: 0px;
         text-align: center;
     }
+    nav ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li button{
+    
+    margin-left: 100px;
+    height: 40px;
+    width: 100px;
+    background-color: white;
+    border: 0.5px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+}
     .search{
         text-align: center;
         border-radius: 10px;
         height: 650px;
-        width: 1500px;
+        width: 1200px;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -207,25 +229,248 @@
         border: 2px solid white;
         background: blue;
     }
+    .nonesign{
+            display: none;
+        }
+    .form{
+        display: block;
+        height: 450px;
+        width: 300px;
+        position: fixed;
+    margin-top: 50px;
+    right: 85px;
+    }
+        .form form{   
+            border: 2px solid red;
+            border-radius: 10px;
+            margin-left: 20px;
+            padding: 0px 10px;
+            height: 100%;
+            width: 100%;
+            background: white;
+        }
+        .form form .h{
+            height: 70px;
+            width: 100%;
+        }
+        .form form .in{
+            height: 70px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .form form .in input{
+            height: 30px;
+            width: 100%;
+            align-items: center;
+            padding-left: 10px;
+        }
+        #inp{
+            height: 30px;
+            width: 90%;
+            color: white;
+            text-align: center;
+            background: blue;
+            font-size: 15px;
+        }
+        .oth{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .oth ul{
+            height: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0px;
+        }
+        .oth ul li{
+            border-radius: 50%;
+            text-align: center;
+            list-style: none;
+            height: 30px;
+            width: 30px;
+            background: red;
+            margin: 0 5px;
+        }
+
+
+
+
+
+
+
+        .nlogin{
+            display: none;
+        }
+    .form{
+        display: block;
+        height: 450px;
+        width: 300px;
+        position: fixed;
+    margin-top: 50px;
+    right: 85px;
+    }
+        .form form{   
+            border: 2px solid red;
+            border-radius: 10px;
+            margin-left: 20px;
+            padding: 0px 10px;
+            height: 100%;
+            width: 100%;
+            background: white;
+        }
+        .form form .h{
+            height: 70px;
+            width: 100%;
+        }
+        .form form .in{
+            height: 70px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .form form .lin{
+            height: 30px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .form form .in input{
+            height: 30px;
+            width: 100%;
+            align-items: center;
+            padding-left: 10px;
+        }
+        #inp{
+            height: 30px;
+            width: 90%;
+            color: white;
+            text-align: center;
+            background: blue;
+            font-size: 15px;
+        }
+        .oth{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .oth ul{
+            height: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0px;
+        }
+        .oth ul li{
+            border-radius: 50%;
+            text-align: center;
+            list-style: none;
+            height: 30px;
+            width: 30px;
+            background: red;
+            margin: 0 5px;
+        }
+      
 </style>
 <body>
     <nav>
-        Navigation
+        <ul>
+            <li>
+                <a href="#"><button>Hotels</button></a>
+            </li>
+            <li>
+                <button onclick="opnSign()">Signun</button>
+            </li>
+            <li>
+                <button onclick="login()">Login</button>
+            </li>
+        </ul>
+            
     </nav>
+    <div class="nonesign" id="sign">
+        <form action="./f.php" method="post">
+        <div class="h">
+           <h2>Signup</h2>
+        <p>Hello welcome create a New account</p> 
+        </div>
+        <div class="in">
+            <label for="">Username</label>
+            <input type="text" placeholder="Type your username" name="username">
+        </div>
+        <div class="in">
+            <label for="">Email Address</label>
+            <input type="text" placeholder="Type your email" name="email">
+        </div>
+        <div class="in">
+            <label for="">Password</label>
+            <input type="text" placeholder="Type Password" name="password">
+        </div>
+        <div class="in">
+            <label for="">Repeat Password</label>
+            <input type="text" placeholder="Type again password">
+        </div>
+        <input id="inp" type="submit" value="Resister Account" name="submit">
+
+        <div class="oth">
+                    <p>Or Signup using</p>
+                    <ul>
+                        <li>f</li>
+                        <li>t</li>
+                        <li>i</li>
+                        <li>l</li>
+                    </ul>
+        </div>
+    </form>
+    </div>
+    <div class="nlogin" id="login">
+        <form action="./l.php" method="post">
+        <div class="h">
+           <h2>Login</h2>
+        <p>Hello welcome create a New account</p> 
+        </div>
+        <div class="in">
+            <label for="">Username</label>
+            <input type="text" placeholder="Type your username" name="urname">
+        </div>
+        <div class="in">
+            <label for="">Password</label>
+            <input type="text" placeholder="Type your Password" name="psword">
+        </div>
+        <div class="lin">
+            <span>Repeat Passsword</span>
+            <span>Forget</span>
+        </div>
+        <input id="inp" type="submit" value="Login Account" name="submit">
+
+        <div class="oth">
+                    <p>Or Login using</p>
+                    <ul>
+                        <li>f</li>
+                        <li>t</li>
+                        <li>i</li>
+                        <li>l</li>
+                    </ul>
+        </div>
+    </form>
+    </div>
     <div class="search">
         <div class="he">
             <h1>Welcome to the go india service book your favouir hotel at the <span>best price</span> </h1>
             <div class="hebox">
                 <ul>
-                    <li>
-                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
-                    </li>
-                    <li>
-                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
-                    </li>
-                    <li>
-                        <div class="boc"> <img src="./download (2).jpg" alt=""></div>
-                    </li>
                     <li>
                         <div class="boc"> <img src="./download (2).jpg" alt=""></div>
                     </li>
@@ -296,7 +541,7 @@
               <input type="text" placeholder="Enter city or hotel name" name="search" id="selhot">  
               <div id="sel"  class="hoy">
                   <ul>
-                      <li><img src="./download (2).jpg" alt=""> <span>delhi</span></li>
+                      <li onclick="meclic()"><img src="./download (2).jpg" alt=""> <span>delhi</span></li>
                       <li><img src="./download (2).jpg" alt=""> <span>delhi</span></li>
                       <li><img src="./download (2).jpg" alt=""> <span>delhi</span></li>
                   </ul>
@@ -330,6 +575,23 @@
       lii.addEventListener("click",()=>{
         console.log("add");
       })
+      function meclic() {
+        console.log(document)
+      }
+  </script>
+  <script>
+      function opnSign() {
+          const sign = document.getElementById("sign")
+        // document.getElementById("sign").style.display= "block"
+        sign.classList.toggle("form");
+        // sign.classList.add("form");
+      }
+      function login() {
+          const sign = document.getElementById("login")
+        // document.getElementById("sign").style.display= "block"
+        sign.classList.toggle("form");
+        // sign.classList.add("form");
+      }
   </script>
 </body>
 </html>
